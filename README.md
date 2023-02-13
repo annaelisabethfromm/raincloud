@@ -1,4 +1,8 @@
-# repetitive rainclouds
+# Repetitive Rainclouds
+Reference: Allen, M., Poggiali, D., Whitaker, K., Marshall, T. R., van Langen, J., & Kievit, R. A.
+    Raincloud plots: a multi-platform tool for robust data visualization [version 2; peer review: 2 approved] 
+    Wellcome Open Research 2021, 4:63. https://doi.org/10.12688/wellcomeopenres.15191.2
+
 
 
 Short tutorial to create raincloud plots to visualize development over time (e.g. training gain at a cognitive task) You can use the example data set (example_rain.xlsx). The data set contains the variables: id, group and the dependent variable (% correct) for two time points (DV_pre and DV_post). 
