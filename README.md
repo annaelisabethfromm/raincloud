@@ -23,21 +23,21 @@ literature suggestions:
 #### Create new variable for the time points (sessions)
                   df0 <- df1_long %>%
                   mutate(session = case_when(
-                    grepl("pre", DV) ~ "1",
-                    grepl("post", DV) ~ "2"
+                  grepl("pre", DV) ~ "1",
+                  grepl("post", DV) ~ "2"
                   ))
 ####
 #### Create arrays for each time point and each group (example for group A time point 1)
                  PreA <- df0[which(df0$group=="A"
-                  & df0$session=="1"), ]
+                              & df0$session=="1"), ]
                   PreA <- PreA$DV_value
 
                   PostA <- df0[which(df0$group=="A"
-                   & df0$session=="2"), ]
+                              & df0$session=="2"), ]
                  PostA <- PostA$DV_value
 ####
 #### Create necessary rain cloud structure (see: XXXX)
-                 nA <-length(PreA)
+                nA <-length(PreA)
                 dA <-data.frame(y=c(PreA, PostA),
                         x=rep(c(1,2), each=nA),
                         id =factor(rep(1:nA,2)))
