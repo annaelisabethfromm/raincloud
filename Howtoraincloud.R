@@ -1,6 +1,12 @@
 #####Repetitive Rainclouds #######
 
 ###Author Anna E. Fromm 
+# the script used several existing packages and I do not want to take credit for developing another tool; 
+#I just want to show how I use different packages to create data for my research
+
+#Allen, M., Poggiali, D., Whitaker, K., Marshall, T. R., van Langen, J., & Kievit, R. A.
+    #Raincloud plots: a multi-platform tool for robust data visualization [version 2; peer review: 2 approved] 
+    #Wellcome Open Research 2021, 4:63. https://doi.org/10.12688/wellcomeopenres.15191.2
 
 rm(list=ls())
 
