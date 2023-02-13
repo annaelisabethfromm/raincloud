@@ -30,9 +30,9 @@ literature suggestions:
 #### Create arrays for each time point and each group (example for group A time point 1)
                  PreA <- df0[which(df0$group=="A"
                               & df0$session=="1"), ]
-                  PreA <- PreA$DV_value
+                 PreA <- PreA$DV_value
 
-                  PostA <- df0[which(df0$group=="A"
+                 PostA <- df0[which(df0$group=="A"
                               & df0$session=="2"), ]
                  PostA <- PostA$DV_value
 ####
@@ -50,5 +50,13 @@ literature suggestions:
                 x <- c(1,2)
                 dfmA<- data.frame(y, x)
 ####
-
+### Second Step: Visualize the data
+- create a ggplot 
+#### Create data points
+               ggplot(NULL, aes(y=y))+
+                    geom_point(data=dA %>% filter(x=="1"), aes(x=xj), color="orange", size=6.0, alpha=.6)+
+                    geom_point(data=dA %>% filter(x=="2"), aes(x=xj), color="red", size=6.0, alpha=.6)+
+                    geom_point(data=dB %>% filter(x=="3"), aes(x=xj), color="skyblue2", size=6.0, alpha=.6)+
+                    geom_point(data=dB %>% filter(x=="4"), aes(x=xj), color="dodgerblue", size=6.0, alpha=.6)
+####
 
