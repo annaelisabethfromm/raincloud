@@ -9,9 +9,13 @@ Short tutorial to create raincloud plots to visualize development over time (e.g
 - load resp. install required R packages: 
 - set the working directory
 - read the data to your R enviornment
-
-df1 <- read.xlsx("example_rain.xlsx"
-                 ,sheet = "1", startRow = 1, colNames = TRUE, rowNames = FALSE, detectDates = FALSE,   skipEmptyRows = TRUE,   skipEmptyCols = TRUE,   rows = NULL,   cols = NULL,   sep.names = ".",   na.strings = "NA",   fillMergedCells = FALSE)
-
-
-- create long format 
+- create long format
+#### Code for long format 
+                  df1_long <-reshape(df1, 
+                   varying = c("DV_pre", "DV_post"), 
+                   v.names="DV_value", 
+                   timevar="DV",
+                   times=c("DV_pre", "DV_post"),
+                   new.row.names = 1:10000, 
+                   direction = "long") 
+####
