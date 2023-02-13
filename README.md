@@ -43,7 +43,7 @@ Aim: create a figure, that looks like this:
                               & df0$session=="2"), ]
                  PostA <- PostA$DV_value
 ####
-#### Create necessary rain cloud structure (see: XXXX)
+#### Create necessary rain cloud structure (see:https://github.com/jorvlan/raincloudplots)
                 nA <-length(PreA)
                 dA <-data.frame(y=c(PreA, PostA),
                         x=rep(c(1,2), each=nA),
