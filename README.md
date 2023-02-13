@@ -52,11 +52,16 @@ literature suggestions:
 ####
 ### Second Step: Visualize the data
 - create a ggplot 
-#### Create data points
+#### Create data points of all participants
                ggplot(NULL, aes(y=y))+
                     geom_point(data=dA %>% filter(x=="1"), aes(x=xj), color="orange", size=6.0, alpha=.6)+
                     geom_point(data=dA %>% filter(x=="2"), aes(x=xj), color="red", size=6.0, alpha=.6)+
                     geom_point(data=dB %>% filter(x=="3"), aes(x=xj), color="skyblue2", size=6.0, alpha=.6)+
                     geom_point(data=dB %>% filter(x=="4"), aes(x=xj), color="dodgerblue", size=6.0, alpha=.6)
 ####
-
+#### add mean for each group and each time point
+                    geom_point(data=dfmA %>% filter(x=="1"), aes(x=x), color="black", size=8, shape=18)+
+                    geom_point(data=dfmA %>% filter(x=="2"), aes(x=x), color="black", size=8, shape=18)+
+                    geom_point(data=dfmB %>% filter(x=="3"), aes(x=x), color="black", size=8, shape=18)+
+                    geom_point(data=dfmB %>% filter(x=="4"), aes(x=x), color="black", size=8, shape=18)
+####
