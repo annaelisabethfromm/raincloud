@@ -5,13 +5,13 @@ Reference: Allen, M., Poggiali, D., Whitaker, K., Marshall, T. R., van Langen, J
 
 
 
-Short tutorial to create raincloud plots to visualize development over time (e.g. training gain at a cognitive task) You can use the example data set (example_rain.xlsx). The data set contains the variables: id, group and the dependent variable (% correct) for two time points (DV_pre and DV_post). 
+Short tutorial to create raincloud plots to visualize development over time (e.g. training gain at a cognitive task). You can use the example data set (example_rain.xlsx). The data set contains the variables: id, group and the dependent variable (% correct) for two time points (DV_pre and DV_post). 
 
 literature suggestions: 
 - https://github.com/jorvlan/raincloudplots
 - https://wellcomeopenresearch.org/articles/4-63
 
-Aim: create a figure, that looks like this: 
+Aim is to create a figure, that looks like this: 
 
 ![grafik](https://user-images.githubusercontent.com/125254113/218568014-551e544d-c0c0-47ca-943a-624c090077fb.png)
 
@@ -142,4 +142,4 @@ Aim: create a figure, that looks like this:
 ![grafik](https://user-images.githubusercontent.com/125254113/218567929-7e47bfe2-c434-4f3d-b65b-68fb52c4b8e1.png)
 
 ### Congrats! You are done
-You can adapt the code when you have mor time points and more groups. If you want to use the same graphical representation for different dependent variables, you can adapt the first step and create a long format with different variables. The other parts of the code will stay the same if you have the same groups and time points. 
+You can adapt the code when you have more time points and more groups. If you want to use the same graphical representation for different dependent variables, you can adapt the first step and create a long format with the different variables. The other parts of the code will stay the same if you have the same groups and time points. 
